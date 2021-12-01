@@ -1,11 +1,11 @@
 ---
- - name: Install tree command on redhat OS
-   hosts: localhost
-   connection: local
-   become: true 
+- name: Install tree command on redhat OS
+  hosts: localhost
+  connection: local
+  become: true 
  
-   tasks:
-      - name: install tree package
-        yum:
-          name: tree
-          state: latest
+  tasks:
+    - name: install tree package
+      yum:
+        name: tree
+        state: latest
