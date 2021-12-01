@@ -1,0 +1,11 @@
+---
+ - name: "install tree command on redhat os"
+   host: localhost
+   connection: local
+   become: true 
+ 
+ - task:
+      name: install tree package
+      yum:
+        name: tree
+        state: latest
