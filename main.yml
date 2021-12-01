@@ -1,11 +1,11 @@
 ---
- - name: "install tree command on redhat os"
-   host: localhost
+ - name: Install tree command on redhat OS
+   hosts: localhost
    connection: local
    become: true 
  
- - task:
-      name: install tree package
-      yum:
-        name: tree
-        state: latest
+   tasks:
+      - name: install tree package
+        yum:
+          name: tree
+          state: latest
